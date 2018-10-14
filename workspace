@@ -1,0 +1,44 @@
+<NotepadPlus>
+    <Project name="flatfair">
+        <Folder name="img">
+            <File name="img\logo.ico" />
+            <File name="img\logo.png" />
+            <File name="img\logo2.png" />
+            <File name="img\logo3.png" />
+        </Folder>
+        <Folder name="js">
+            <File name="js\bootstrap.min.js" />
+            <File name="js\fontawesome.js" />
+            <File name="js\jquery-3.3.1.slim.min.js" />
+            <File name="js\main.js" />
+            <File name="js\popper.min.js" />
+            <File name="js\solid.js" />
+        </Folder>
+        <Folder name="modal">
+            <File name="modal\addClaim.php" />
+            <File name="modal\login.php" />
+        </Folder>
+        <Folder name="page">
+            <Folder name="DocumentCenter" />
+            <Folder name="Flatbond_charge">
+                <File name="page\Flatbond_charge\index.php" />
+            </Folder>
+            <Folder name="Flatbond_document">
+                <File name="page\Flatbond_document\index.php" />
+            </Folder>
+            <Folder name="HelpCenter" />
+            <Folder name="Main">
+                <File name="page\Main\index.php" />
+            </Folder>
+            <Folder name="Organisation" />
+            <Folder name="Settings" />
+        </Folder>
+        <Folder name="style">
+            <File name="style\bootstrap.min.css" />
+            <File name="style\main.css" />
+            <File name="style\navbar-fixed-left.min.css" />
+        </Folder>
+        <File name="index.php" />
+        <File name="navbar.php" />
+    </Project>
+</NotepadPlus>
