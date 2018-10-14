@@ -4,22 +4,37 @@
     </div>
 
     <ul class="list-unstyled components">
-        <li>
-            <a href="#login" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span>Login / Sign up</a>
-            
-            <ul class="collapse list-unstyled" id="login">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#popUpLogin">Login</a>
-                </li>
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#popUpSignUp">Sign Up</a>
-                </li>
-            </ul>
+        
+        <?php
+        if(isset($_COOKIE["user"]))
+        {
 
-        </li>
+            echo "<span class='userNavBar'>";
+            echo "<p>Connect as <span>".$_COOKIE["user"]."</span></p>";
+            echo "<center><a href='#' id='disconnect'>Sign out</a></center>";
+            echo "</span>";
+        }
+        else
+        {
+        ?>
+            <li>
+                <a href="#login" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span>Login / Sign up</a>
+                
+                <ul class="collapse list-unstyled" id="login">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#popUpLogin">Login</a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#popUpSignUp">Sign Up</a>
+                    </li>
+                </ul>
+            </li>
+        <?php
+        }
+        ?>
         <div class="line"></div>
         <p>Main</p>
-        <li class="active">
+        <li id="flatbondsPage">
             <a href="#flatbonds" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="glyphicon glyphicon-home"></span>Flatbonds</a>
             <ul class="collapse list-unstyled" id="flatbonds">
                 <li>
@@ -30,18 +45,18 @@
                 </li>
             </ul>
         </li>
-        <li>
+        <li id="settingsPage">
             <a href="../Settings/index.php"><span class="glyphicon glyphicon-cog"></span>Settings</a>
         </li>
-        <li>
-            <a href="../Organisation/index.php"><span class="glyphicon glyphicon-envelope"></span>Organisation</a>
-        </li>
+        <li id="organisationPage">
+            <a href="../Organisation/index.php"><span class="glyphicon glyphicon-asterisk"></span>Organisation</a>
+        </li >
          <div class="line"></div>
         <p>Help</p>
-        <li>
+        <li id="documentCenterPage"> 
             <a href="../DocumentCenter/index.php"><span class="glyphicon glyphicon-download-alt"></span>Document center</a>
         </li>
-        <li>
+        <li id="helpCenterPage">
             <a href="../HelpCenter/index.php"><span class="glyphicon glyphicon-question-sign"></span>Help center</a>
         </li>
     </ul>

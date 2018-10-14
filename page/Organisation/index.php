@@ -42,6 +42,8 @@
                     </div>
                 </nav>
                 
+                <span id="alertDiv"></span>
+                
                 <div class="p-3 mb-3 bg-white rounded">
                     Page to build
                 </div>
@@ -55,6 +57,6 @@
         <script src="../../js/popper.min.js"></script>
         <script src="../../js/bootstrap.min.js"></script>
         <script src="../../js/main.js"></script>
+        <script src="script.js"></script>
     </body>
-
 </html>

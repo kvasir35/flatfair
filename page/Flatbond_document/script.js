@@ -1,5 +1,6 @@
 $(document).ready(function () 
 {
+    $("#flatbondsPage").addClass("active");
     $("#validateDocumentForm").on('submit', function(e)
     {
         console.log('toto');

@@ -30,7 +30,6 @@
             <div id="content" class="bg-light">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
-
                         <h3 id="page-title">Document Center</h3>
                         <p>Documentation of the website</p>
                         <button type="button" id="sidebarCollapse" class="navbar-btn">
@@ -38,9 +37,10 @@
                             <span></span>
                             <span></span>
                         </button>
-                        
                     </div>
                 </nav>
+                
+                <span id="alertDiv"></span>
                 
                 <div class="p-3 mb-3 bg-white rounded">
                     Page to build
@@ -56,6 +56,6 @@
         <script src="../../js/popper.min.js"></script>
         <script src="../../js/bootstrap.min.js"></script>
         <script src="../../js/main.js"></script>
+        <script src="script.js"></script>
     </body>
-
 </html>

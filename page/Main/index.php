@@ -42,6 +42,8 @@
                     </div>
                 </nav>
                 
+                <span id="alertDiv"></span>
+                
                 <div class="p-3 mb-3 bg-white rounded">
                     You are on the main page
                 </div>

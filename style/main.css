@@ -219,6 +219,9 @@ a.article, a.article:hover {
     }
 }
 
+/* ---------------------------------------------------
+    OTHER
+----------------------------------------------------- */
 .glyphicon
 {
     padding-right : 10px;
@@ -232,4 +235,15 @@ a.article, a.article:hover {
 .btn-outline-info:hover 
 {
   background-color: transparent !important;
+}
+
+.userNavBar
+{
+    text-align:center;
+    padding-left:0px !important;
+}
+
+.userNavBar span
+{
+    color:#FFFFFF;
 }

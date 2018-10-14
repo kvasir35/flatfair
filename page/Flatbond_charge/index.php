@@ -41,6 +41,10 @@
                     </div>
                 </nav>
                 
+                <?php
+                if(isset($_GET['hiddenDocument']))
+                {
+                ?>
                 <span id="alertDiv"></span>
                 
                 <div class="p-3 mb-3 bg-white rounded">
@@ -59,6 +63,13 @@
                         </tr>
                     </thead>
                 </table>
+                <?php
+                }
+                else
+                {
+                    echo "<span id='alertDiv'><div class='alert alert-danger' role='alert' id='alertSuccess'>You need to add the documents first : <a href='../Flatbond_document/index.php'>Documents</a></div></span>";
+                }
+                ?>
             </div>
         </div>
         <?php
@@ -72,5 +83,4 @@
         <script src="../../js/main.js"></script>
         <script src="script.js"></script>
     </body>
-
 </html>

@@ -13,9 +13,11 @@
                     <div class="form-group">
                         <label for="claimCategory">Categorie</label>
                         <select id="claimCategory" class="form-control">
-                            <option value="agent">Cat 1</option>
-                            <option value="tenant">Cat 2</option>
-                            <option value="landlord">Cat 3</option>
+                            <option value="cat1">Cat 1</option>
+                            <option value="cat2">Cat 2</option>
+                            <option value="car3">Cat 3</option>
+                            <option value="cat4">Cat 4</option>
+                            <option value="cat5">Cat 5</option>
                         </select>
                     </div>
                     <div class="form-group">

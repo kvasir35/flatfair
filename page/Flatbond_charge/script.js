@@ -1,5 +1,6 @@
 $(document).ready(function () 
 {
+    $("#flatbondsPage").addClass("active");
 	$('#addClaimButton').on('click', function () 
     {
 		var category = $("#claimCategory").val();
@@ -16,13 +17,15 @@ $(document).ready(function ()
             $("#popUpAddClaim").modal('toggle');
             $("#alertModal").empty();
             $("#alertDiv").empty();
-            $("#alertDiv").append("<div class='alert alert-success' role='alert' id='alertSuccess'>Claim added</div>");
+            $("#alertDiv").append("<div class='alert alert-success' role='alert'>Claim added</div>");
+            $("#claimDescription").val("");
+            $("#claimAmmount").val("");
         }
         else
         {
             $("#alertModal").empty();
             $("#alertDiv").empty();
-            $("#alertModal").append("<div class='alert alert-danger' role='alert' id='alertSuccess'>Error in the form</div>");
+            $("#alertModal").append("<div class='alert alert-danger' role='alert'>Error in the form</div>");
         }
 	});
 });
