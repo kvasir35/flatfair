@@ -19,19 +19,33 @@
             <File name="modal\login.php" />
         </Folder>
         <Folder name="page">
-            <Folder name="DocumentCenter" />
+            <Folder name="DocumentCenter">
+                <File name="page\DocumentCenter\index.php" />
+                <File name="page\DocumentCenter\script.js" />
+            </Folder>
             <Folder name="Flatbond_charge">
                 <File name="page\Flatbond_charge\index.php" />
+                <File name="page\Flatbond_charge\script.js" />
             </Folder>
             <Folder name="Flatbond_document">
                 <File name="page\Flatbond_document\index.php" />
+                <File name="page\Flatbond_document\script.js" />
             </Folder>
-            <Folder name="HelpCenter" />
+            <Folder name="HelpCenter">
+                <File name="page\HelpCenter\script.js" />
+                <File name="page\HelpCenter\index.php" />
+            </Folder>
             <Folder name="Main">
                 <File name="page\Main\index.php" />
             </Folder>
-            <Folder name="Organisation" />
-            <Folder name="Settings" />
+            <Folder name="Organisation">
+                <File name="page\Organisation\index.php" />
+                <File name="page\Organisation\script.js" />
+            </Folder>
+            <Folder name="Settings">
+                <File name="page\Settings\index.php" />
+                <File name="page\Settings\script.js" />
+            </Folder>
         </Folder>
         <Folder name="style">
             <File name="style\bootstrap.min.css" />

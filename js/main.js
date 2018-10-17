@@ -101,6 +101,8 @@ $(document).ready(function () {
         if(valid)
         {
             setCookie("user",$('#emailLogin').val());
+            deleteCookie("document");
+            $("#alertDiv").empty();
             $("#alertDiv").append("<div class='alert alert-success' role='alert'>You are now connect</div>");
             $("#popUpLogin").modal('toggle');
         }
@@ -131,8 +133,9 @@ $(document).ready(function () {
 
         if(valid)
         {
+            $("#alertDiv").empty();
             $("#alertDiv").append("<div class='alert alert-success' role='alert'>Your new password as been send to your mail adress : "+$('#emailForgetPassword').val()+ "</div>");
-            $("#popUpLogin").modal('toggle');
+            $("#popUpforgetPassword").modal('toggle');
         }
         else
         {
@@ -225,6 +228,8 @@ $(document).ready(function () {
         if(valid)
         {
             setCookie("user",$('#emailForm').val());
+            deleteCookie("document");
+            $("#alertDiv").empty();
             $("#alertDiv").append("<div class='alert alert-success' role='alert'>Your account had been created</div>");
             $("#popUpLogin").modal('toggle');
         }
@@ -247,7 +252,7 @@ function setCookie(key, value)
 {
     var expires = new Date();
     expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
-    document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+    document.cookie = key + '=' + value + ';expires=' + expires.toUTCString() + "; path=/;";
 }
 
 function getCookie(key) 
@@ -258,5 +263,5 @@ function getCookie(key)
 
 function deleteCookie( name ) 
 {
-  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/;';
 }

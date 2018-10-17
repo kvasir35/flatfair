@@ -42,7 +42,7 @@
                 </nav>
                 
                 <?php
-                if(isset($_GET['hiddenDocument']))
+                if(isset($_COOKIE['document']) && $_COOKIE['document'] == true && isset($_COOKIE['user']))
                 {
                 ?>
                 <span id="alertDiv"></span>
@@ -67,7 +67,14 @@
                 }
                 else
                 {
-                    echo "<span id='alertDiv'><div class='alert alert-danger' role='alert' id='alertSuccess'>You need to add the documents first : <a href='../Flatbond_document/index.php'>Documents</a></div></span>";
+                    if(!isset($_COOKIE['user']))
+                    {
+                        echo "<span id='alertDiv'><div class='alert alert-danger' role='alert' id='alertSuccess'>You need to be connect to access to this page</a></div></span>";
+                    }
+                    else
+                    {
+                        echo "<span id='alertDiv'><div class='alert alert-danger' role='alert' id='alertSuccess'>You need to add the documents first : <a href='../Flatbond_document/index.php'>Documents</a></div></span>";
+                    }
                 }
                 ?>
             </div>

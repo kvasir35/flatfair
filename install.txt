@@ -1,0 +1,15 @@
+Requirements:
+- Have an apache server install with PHP 7.2 on it (if needed you can install WampServer: http://www.wampserver.com/)
+- Have git install on your machine.
+
+Get the project: 
+- Doing a git clone of the project inside the folder of your choice on the apache server by using the command: git clone https://github.com/kvasir35/flatfair.git
+	- You need to be inside the folder wamp64/www if you use WampServer
+- Check if the folder "flatfair" has been created.
+- Open the navigator of your choice and go to the URL of your apache server follow by the path where you clone the project and index.php 
+	- if you use WampServer in local: localhost/flatfair/index.php
+
+The project:
+- There is no database so you can log in and sign up with the user and password of your choice. The form just needs to be fill.
+
+- This project uses some COOKIE so you need to enable them.

@@ -42,6 +42,10 @@
                     </div>
                 </nav>
                 
+                <?php
+                if(isset($_COOKIE['user']))
+                {
+                ?>
                 <span id="alertDiv"></span>
                 
                 <div class="p-3 mb-3 bg-white rounded">
@@ -83,6 +87,13 @@
                         </div>
                     </form>
                 </div>
+                <?php
+                }
+                else
+                {
+                    echo "<span id='alertDiv'><div class='alert alert-danger' role='alert' id='alertSuccess'>You need to be connect to access to this page</a></div></span>";
+                }
+                ?>
             </div>
         </div>
         <?php
